@@ -1,18 +1,18 @@
-// Widescreen
+// Widescreens
 @include mediaXl {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-// Desktops / laptops
+// Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-// Tablets / small latops
+// Tablets & Small Laptops
 @include mediaMd {
   main {
     align-items: center;
@@ -46,7 +46,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url(../img/portrait_small.jpg);
+      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px;
     }
@@ -68,10 +68,18 @@
   }
 }
 
-// SmartPhones
+// Smartphones
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
+  main {
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
+    }
+
+    .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem;
+    }
   }
 
   .projects {

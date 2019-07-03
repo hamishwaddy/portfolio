@@ -1,4 +1,4 @@
-// Menu button
+// Menu Button
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -38,7 +38,7 @@
   }
 }
 
-// Menu overlay
+// Menu Overlay
 .menu {
   position: fixed;
   top: 0;
@@ -76,7 +76,7 @@
     }
   }
 
-  // Branding side
+  // Branding Side
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
@@ -90,7 +90,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -127,7 +127,7 @@
   }
 }
 
-// Delay each nav item slide by 0.1 seconds
+// Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
